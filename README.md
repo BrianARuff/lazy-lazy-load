@@ -15,15 +15,18 @@ npm install --save lazy-lazy-load
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'lazy-lazy-load'
+import LazyComponent from 'lazy-lazy-load'
 
 class Example extends Component {
   render () {
     return (
-      <MyComponent />
+      LazyComponent("./path/to/Component", <FallBackComponent/>);
     )
   }
 }
+
+className, style, and key are optional attributes to the LazyComponent
+
 ```
 
 ## License
